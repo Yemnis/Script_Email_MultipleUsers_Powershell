@@ -45,6 +45,8 @@ foreach($user in $content)
 
         # Generate Random Temporary Password, 12 characters long.
         $password = Get-RandomPassword 12
+        
+        # Convert Random Password to Secure String.
         $passwordSec = ConvertTo-SecureString -AsPlainText $password -Force
 
         # Add password generated above to the user's account
