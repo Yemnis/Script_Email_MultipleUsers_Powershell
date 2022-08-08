@@ -1,3 +1,4 @@
+# Function to generate new random password.
 function Get-RandomPassword {
     param (
         [Parameter(Mandatory)]
